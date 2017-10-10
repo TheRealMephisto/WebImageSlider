@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+body {
+}
+
+.imageSliderDiv {
+	position: relative;
+	width: 100%;
+}
+
+.imageSliderUl {
+	list-style-type: none;
+	white-space: nowrap;
+	position: absolute;
+	overflow: hidden;
+}
+
+.imageSliderUl li {
+	display: inline-block;
+}
+
+.sliderImg {
+	width: 100%;
+	display: block;
+}
+
+.imageSliderButton {
+	background-color: transparent;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	z-index: 5;
+	position: absolute;
+	height: inherit;
+	width: 5%;
+}
+
+.imageSliderButton h1 {
+	color: black;
+}
+
+.imageSliderButton:hover {
+	background-color: grey;
+	opacity: 0.3;
+}
+
+#imageSlideRightButton {
+	right: 0px;
+}
