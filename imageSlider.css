@@ -36,7 +36,7 @@ body {
 	z-index: 5;
 	position: absolute;
 	height: inherit;
-	width: 5%;
+	width: 10%;
 }
 
 .imageSliderButton h1 {
@@ -50,4 +50,10 @@ body {
 
 #imageSlideRightButton {
 	right: 0px;
+}
+
+@media screen and (min-width: 800px) {
+	.imageSliderButton {
+		width: 5%;	
+	}
 }
