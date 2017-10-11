@@ -1,10 +1,19 @@
-// DOM Ready
 $(window).on("load", function() {
+	resizeButtons();
+});
+
+// Watch for window resizing event
+$(window).resize(function() {
+	resizeButtons();
+});
+
+function resizeButtons() {
 	divHeight = $(".sliderImg").height();
 	$(".imageSliderDiv").height($(".sliderImg").height());
 	$(".imageSliderButton").height($(".sliderImg").height());
-});
+}
 
+// Class constructor
 function imageSlider() {
 	this.time = 500;
 	this.browserWidth = $(window).width();
